@@ -61,12 +61,17 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  border: 2px solid red;
 }
 
 .task span {
   color: #333;
-  font-size: 18px;
+  font-size: 38px;
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .task input {
@@ -75,4 +80,8 @@ ul {
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.task button {
+  margin-left: 10px;
 }
