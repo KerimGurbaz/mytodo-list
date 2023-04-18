@@ -9,7 +9,7 @@ const ParentComponent = () => {
     setTasks([...tasks, { text: task, isEditing: false }]);
   };
 
-  const deleteTask = () => {
+  const deleteTask = (index) => {
     const newTask = [...tasks];
     newTask.splice(index, 1);
     setTasks(newTask);
