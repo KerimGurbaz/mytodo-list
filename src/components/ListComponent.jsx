@@ -27,13 +27,13 @@ function ListComponent({ tasks, deleteTask, editTask, toggleComplete }) {
           ) : (
             <span onClick={() => toggleComplete(index)}>{task.text}</span>
           )}
-          <button onClick={() => deleteTask(index)}>Sil</button>
+          <button onClick={() => deleteTask(index)}>Del</button>
           {task.isEditing ? (
             <button onClick={() => editTask(index, inputRef.current.value)}>
               Kaydet
             </button>
           ) : (
-            <button onClick={() => editTask(index)}>Düzenle</button>
+            <button onClick={() => editTask(index)}>Edit</button>
           )}
         </li>
       ))}
